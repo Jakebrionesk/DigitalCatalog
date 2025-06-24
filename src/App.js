@@ -177,6 +177,13 @@ export default function App() {
                       callApi={callApi}
                       showConfirm={showConfirm}
                     />;
+        case 'SettingsProducts': // Handle this as a distinct top-level screen
+            return <SettingsProductManagementScreen
+                      setCurrentScreen={navigateTo}
+                      fetchProducts={fetchProducts}
+                      callApi={callApi}
+                      showConfirm={showConfirm}
+                    />;
         case 'Search':
             return <SearchScreen
                       searchTerm={searchTerm}
@@ -869,14 +876,7 @@ const AppSettingsScreen = ({ setCurrentScreen, callApi, showConfirm }) => {
                 </button>
             </div>
             {/* Navigating to a dedicated screen for product management from settings for better structure */}
-            {currentScreen === 'SettingsProducts' && (
-                <SettingsProductManagementScreen
-                    setCurrentScreen={setCurrentScreen}
-                    fetchProducts={fetchProducts}
-                    callApi={callApi}
-                    showConfirm={showConfirm}
-                />
-            )}
+            {/* The conditional rendering of SettingsProductManagementScreen has been moved to the App component's renderContent */}
         </div>
     );
 };
