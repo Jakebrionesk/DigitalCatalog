@@ -7,8 +7,8 @@ import React, { useState, useEffect } from 'react';
 
 // --- IMPORTANT: Replace with your deployed Google Apps Script Web App URL ---
 // After deploying your Google Apps Script (from Part 2), copy its "Web app URL" and paste it here.
-const GOOGLE_SHEETS_API_URL = 'https://script.google.com/macros/s/AKfycbyDj5ZveFJlT1AIxB-46g4wyQgEGunAei0T8LXE-Y-wLoqQ8LUcFAdHRJexGL94F-d3/exec'; // <--- This URL has been updated!
-
+const GOOGLE_SHEETS_API_URL = 'https://script.google.com/macros/s/AKfycbxnvELDiDgcyD7dvN7yuYUsXHqjJgSPAodpFYV5IUNjky1EVogZSzvA876LEEr5dKlE/exec';
+//
 // --- Main App Component ---
 // This is the root of your application.
 export default function App() {
