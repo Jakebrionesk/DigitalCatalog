@@ -869,6 +869,7 @@ const AppSettingsScreen = ({ setCurrentScreen, callApi, showConfirm }) => {
                 </button>
             </div>
             {/* Navigating to a dedicated screen for product management from settings for better structure */}
+            {/* Fix: Pass required props to SettingsProductManagementScreen */}
             {currentScreen === 'SettingsProducts' && (
                 <SettingsProductManagementScreen
                     setCurrentScreen={setCurrentScreen}
@@ -1119,7 +1120,7 @@ const addProductStyles = {
 };
 
 
-// App Settings Screen Styles (New)
+// App Settings Screen (New)
 const appSettingsStyles = {
     title: { ...addProductStyles.title, color: '#333' },
     settingsSection: { width: '100%', maxWidth: '800px', margin: '20px auto', padding: '25px', background: '#fff', borderRadius: '12px', boxShadow: '0 5px 15px rgba(0,0,0,0.08)' },
