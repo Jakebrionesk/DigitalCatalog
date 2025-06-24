@@ -884,7 +884,7 @@ const AppSettingsScreen = ({ setCurrentScreen, callApi, showConfirm }) => {
 
 // --- Settings Product Management Screen (Extracted from old Settings) ---
 // This is the old SettingsScreen logic, now dedicated to product management.
-const SettingsProductManagementScreen = ({ setCurrentScreen, fetchProducts, callApi, showConfirm }) => {
+const SettingsProductManagementScreen = ({ setCurrentScreen, fetchProducts, callApi, showConfirm }) => { // Destructure props here
     const { settings } = useContext(SettingsContext);
     const [products, setProducts] = useState([]);
     const [filter, setFilter] = useState('');
