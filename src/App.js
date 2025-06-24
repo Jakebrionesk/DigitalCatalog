@@ -1,9 +1,9 @@
 import React, { useState, useEffect, createContext, useContext } from 'react';
 
 // --- IMPORTANT: Replace with your deployed Google Apps Script Web App URL ---
-// After deploying your Google Apps Script (from Part 2), copy its "Web app URL" and paste it here.
-// MAKE SURE THIS IS THE LATEST URL AFTER YOUR CODE.GS REDEPLOYMENT!
-const GOOGLE_SHEETS_API_URL = 'https://script.google.com/macros/s/AKfycbzLedMyXvexzZKK7lRrfOe0K3_AOpY2aW2oIaepcbYm1M-YDHRMjwHGKBRTuPkWzMn_/exec';
+// After deploying your Google Apps Script, copy its "Web app URL" and paste it here.
+// THIS URL MUST BE THE LATEST ONE FROM YOUR GOOGLE APPS SCRIPT DEPLOYMENT!
+const GOOGLE_SHEETS_API_URL = 'https://script.google.com/macros/s/AKfycbzLedMyXvexzZKK7lRrfOe0K3_AOpY2aW2oIaepcbYm1M-YDHRMjwHGKBRTuPkWzMn_/exec'; // <--- UPDATE THIS URL
 
 
 // --- Settings Context ---
